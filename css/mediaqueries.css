@@ -1,0 +1,17 @@
+@media screen and (max-width:900px) {
+  body {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #todo-list {
+    width: 100%;
+  }
+}

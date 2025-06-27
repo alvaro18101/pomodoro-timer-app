@@ -1,0 +1,269 @@
+/* GLOBAL VATIABLES */
+
+:root {
+  --main-gray: #f3f4f6;
+  --light-gray: #F9FAFB;
+  --light-blue: #3b82f6;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+width: 80%;
+margin: auto;
+font-family: Roboto;
+background-color: var(--main-gray);
+display: flex;
+gap: 2rem;
+justify-content: center;
+box-sizing: border-box;
+padding: 2rem 0;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+/* TIMER */
+#timer {
+  width: 100%;
+}
+
+.timer-container {
+  width: 100%;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 25px 40px -15px rgb(0 0 0 / 0.25);
+}
+
+.timer-title {
+  text-align: left;
+}
+
+.timer-status-container {
+  margin: auto;
+  width: 80%;;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-gray);
+  border-radius: 10px;
+}
+
+.timer-status-button {
+  width: 100%;
+  padding: 0.3rem;
+  /* background-color: var(--main-gray); */
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.timer-status-button.active{
+  color: #000000;
+}
+
+.timer-status-button-inner-container {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+
+}
+
+.timer-status-button.active .timer-status-button-inner-container {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.time-text {
+  width: 100%;
+  margin: 1rem auto;
+  margin-bottom: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Saprona';
+  font-size: 6rem;
+  font-weight: 200;
+  user-select: none;
+}
+
+.split-line {
+  width: 70%;
+  margin: 2rem auto;
+  height: 8px;
+  background-color: var(--main-gray);
+}
+
+.timer-buttons {
+  margin: 2rem auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.timer-buttons button {
+  width: 20px;
+  height: 20px;
+  padding: 0.8rem;
+  cursor: pointer;
+  background: var(--main-gray);
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+/* .timer-buttons button:focus {
+  outline: 2px solid #d4d5d5;
+} */
+
+.timer-buttons button:hover {
+  background-color: #e5e7eb;
+}
+
+#play-button {
+  padding: 1.2rem;
+  background-color: var(--light-blue);
+}
+
+#play-button:hover {
+  background-color: #2f2f31;
+}
+
+svg {
+  width: 100%;
+}
+
+
+
+/* TO DO LIST */
+
+#todo-list {
+  width: 60%;
+}
+
+.todo-list-container {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 25px 40px -15px rgb(0 0 0 / 0.25);
+}
+
+.new-task-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.new-task-input {
+  width: 100%;
+  background-color: var(--light-gray);
+  padding: 0.8rem 1rem;
+  border-radius: 15px;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  outline: 2px solid transparent;
+}
+
+.new-task-input:focus {
+  outline: 2px solid var(--light-blue);
+  transition: outline 0.2s ease;
+  /* transition: 0.3s; */
+}
+
+.add-new-task-button {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--light-blue);
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-new-task-button:hover {
+  background-color: #2563eb;
+}
+
+.task {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0 2rem;
+  border-bottom: 1px solid #c2c2c2;
+  user-select: none;
+  position: relative;
+}
+
+.task::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url("../assets/images/uncheck.png");
+  background-size: cover;
+  background-position: center;
+  top: 16px;
+  left: -28px;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #555;
+}
+
+
+.task.checked::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url("../assets/images/check.png");
+  background-size: cover;
+  background-position: center;
+  top: 16px;
+  left: -28px;
+  cursor: pointer;
+}
+
+.task::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url("../assets/images/x.png");
+  background-size: cover;
+  background-position: center;
+  top: 16px;
+  right: -28px;
+  cursor: pointer;
+}
+
+.tasks-completed {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #828282;
+}

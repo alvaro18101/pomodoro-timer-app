@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Saprona';
+    src: local('Saprona Light'), local('Saprona-Light'),
+        url('Saprona-Light.woff2') format('woff2'),
+        url('Saprona-Light.woff') format('woff'),
+        url('Saprona-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
