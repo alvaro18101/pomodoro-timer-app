@@ -10,29 +10,38 @@
 }
 }
 
-
 @media screen and (max-width:900px) {
-  #todo-list {
-    width: 100%;
-  }
-
-  .timer-title {
-    font-size: 2.5rem;
+  .timer-container {
+    padding: 2rem;
   }
 
   .timer-status-container {
     width: 100%;
   }
 
-  .timer-status-button {
-    font-size: 1.8rem;
-  }
-
   .timer-status-button-inner-container {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .time-text {
-    font-size: 10rem;
+    font-size: 5rem;
+  }
+
+  .split-line {
+    width: 100%;
+  }
+
+  .timer-buttons-container {
+    gap: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .timer-buttons-container button {
+    width: 30px;
+    height: 30px;
+  }
+
+  #todo-list {
+    width: 100%;
   }
 }

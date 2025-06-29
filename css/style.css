@@ -75,6 +75,8 @@ h2 {
 
 .timer-status-button.active{
   color: #000000;
+  font-weight: 600;
+
 }
 
 .timer-status-button-inner-container {
@@ -86,8 +88,6 @@ h2 {
 .timer-status-button.active .timer-status-button-inner-container {
   background-color: #FFFFFF;
   border-radius: 10px;
-  color: #000000;
-  font-weight: 600;
 }
 
 .time-text {
@@ -108,7 +108,7 @@ h2 {
   background-color: var(--main-gray);
 }
 
-.timer-buttons {
+.timer-buttons-container {
   margin: 2rem auto;
   width: 100%;
   text-align: center;
@@ -118,7 +118,7 @@ h2 {
   gap: 2rem;
 }
 
-.timer-buttons button {
+.timer-buttons-container button {
   width: 20px;
   height: 20px;
   padding: 0.8rem;
@@ -132,11 +132,8 @@ h2 {
   box-sizing: content-box;
 }
 
-/* .timer-buttons button:focus {
-  outline: 2px solid #d4d5d5;
-} */
 
-.timer-buttons button:hover {
+.timer-buttons-container button:hover {
   background-color: #e5e7eb;
 }
 
