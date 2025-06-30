@@ -45,3 +45,10 @@
     width: 100%;
   }
 }
+
+
+@media (hover: none) {
+  #play-button:hover {
+    background-color: var(--light-blue);
+  }
+}
