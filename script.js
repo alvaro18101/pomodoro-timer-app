@@ -93,7 +93,7 @@ function timerFunction () {
         timeText.innerText = subtractOneSecond(timeText.innerText)
         console.log(timeText.innerText);
         if (minuteConversion(timeText.innerText) === 0){
-          const audio = new Audio("./assets/audio/Pickup.wav");
+          const audio = new Audio("./assets/audio/pomodoro_alert.wav");
           audio.play();
           clearInterval(intervalId);
           intervalId = null;
