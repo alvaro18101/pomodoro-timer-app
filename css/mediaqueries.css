@@ -48,6 +48,10 @@
 
 
 @media (hover: none) {
+  .timer-buttons-container button:hover {
+    background-color: var(--main-gray);
+  }
+
   #play-button:hover {
     background-color: var(--light-blue);
   }
